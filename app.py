@@ -9,7 +9,13 @@ st.write("Качи снимка на етикет от продукт.")
 
 file = st.file_uploader("Избери снимка", type=["jpg", "png", "jpeg"])
 
-harmful = ["E621", "E102", "E110", "E250", "E110", "E122", "E124", "E951", "E954", "E621", "E150d", "E211", "sodium benzoate", "potassium sorbate", "aspartame", "caramel color", "E955", "sucralose", "E950", "acesulfame", "E220", "E228"]
+harmful = ["E621", "E102", "E110", "E250", "E110", "E122", "E124", "E951", "E954", "E621", "E150d", "E211",
+           "sodium benzoate", "potassium sorbate", "aspartame", "caramel color", "E955", "sucralose", "E950",
+           "acesulfame", "E220", "E228", "Мононатриев глутамат", "Тартразин", "Сънсет жълто FCF", "Натриев нитрит",
+           "Кармоизин", "Понсо 4R", "Аспартам", "Захарин", "Амониево-сулфитен карамел", "Натриев бензоат", "Калиев сорбат", "Сукралоза", "Ацесулфам К", "Серен диоксид", "Калиев бисулфит",
+          
+          
+          ]
 
 if file is not None:
     image = Image.open(file)
